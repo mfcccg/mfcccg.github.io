@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QhuriNet | Reciclaje Colaborativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="diseño.css" /> 
+</head> 
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#inicio" class="brand">
+            <img src="img/logo.png" alt="QhuriNet" class="logo">
+            <span class="brand-name">QhuriNet</span>
+            </a>
+            <nav class="nav-main">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#soporte">Soporte</a></li>
+                <li class="has-dropdown">
+                    <a href="#explora">Explora</a>
+                    <ul class="dropdown">
+                        <li><a href="#mapa">Mapa Interactivo</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#impacto">Impacto Ambiental</a></li>
+                        <li><a href="#chat">Chat de Coordinación</a></li>
+                        <li><a href="#gestion">Gestión de Material</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+
+            <div class="auth">
+            <a href="#login" class="login-link">Iniciar sesión</a>
+            <a href="#registro" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="section hero">
+        <div class="hero-content">
+            <h1>Transforma tu ciudad con</h1>
+            <h1>reciclaje colaborativo</h1>
+            <p>QhuriNet es la plataforma que une a las personas para crear un ecosistema de reciclaje más eficiente y sustentable.</p>
+        </div>
+        <div class="hero-img">
+            <img src="img/reciclaje.png" alt="reciclaje">
+        </div>
+    </section>
+
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/mapa.png" alt="Mapa Interactivo">
+                    <h3>Mapa interactivo de reciclaje</h3>
+                </div>
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/gestion.png" alt="Gestión de Materiales">
+                    <h3>Gestión de materiales reciclables</h3> 
+                </div>
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/recoleccion.png" alt="Recolección colaborativa">
+                    <h3>Recolección colaborativa</h3>
+                </div>
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/incentivos.png" alt="Sistema de Incentivos">
+                    <h3>Sistema de incentivos y gamificación</h3>
+                </div>
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/estadistica.png" alt="Panel de Estadísticas">
+                    <h3>Panel de estadísticas y reportes</h3>
+                </div>
+                <div class="card">
+                    <img class="card-icon" src="img/servicios/educacion.png" alt="Educación ambiental">
+                    <h3>Educación y comunidad ambiental</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section">
+        <div class="container about">
+            <h2>Nosotros</h2>
+            <p>
+                En SamiForce, creemos que reciclar debe ser una acción simple, confiable y trazable.
+                Nacimos como una startup ambiental comprometida con la innovación tecnológica y la sostenibilidad,
+                desarrollando QhuriNet, una plataforma que conecta ciudadanos, bodegas y recicladores para hacer del
+                reciclaje una práctica cotidiana, transparente y colaborativa.
+                Nuestra meta es cerrar la brecha entre la intención y la acción, impulsando un Perú más limpio y circular.
+            </p>
+
+            <div class="about-split">
+                <div class="about-block">
+                    <h3>Misión</h3>
+                    <p>
+                        Facilitar el reciclaje colaborativo conectando a quienes generan materiales con quienes los recuperan,
+                        mediante tecnología accesible, diseño centrado en las personas y datos abiertos.
+                    </p>
+                </div>
+
+                <div class="about-block">
+                    <h3>Visión</h3>
+                    <p>
+                        Ser referentes en reciclaje colaborativo en Latinoamérica, promoviendo un ecosistema urbano más
+                        consciente, eficiente y sostenible.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="valores-title">Valores</h3>
+            <div class="valores-grid">
+                <div class="valor-item">♻️ Sostenibilidad y economía circular</div>
+                <div class="valor-item">💡 Innovación responsable</div>
+                <div class="valor-item">🔒 Confianza y seguridad</div>
+                <div class="valor-item">🤝 Inclusión y accesibilidad</div>
+                <div class="valor-item">📊 Transparencia basada en datos</div>
+                <div class="valor-item">🌍 Impacto tangible</div>
+                <div class="valor-item">📚 Aprendizaje continuo</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+
+            <div class="contact-card">
+            <form id="contactForm" class="contact-form" action="/IHC/procesar_form.php" method="POST">
+                <div class="contact-left">
+                <div class="input-group">
+                    <label for="nombres">Nombres:</label>
+                    <input id="nombres" type="text" name="nombres" placeholder="Ingresa tus nombres" autocomplete="given-name" autocapitalize="words"/>
+                </div>
+                <div class="input-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input id="apellidos" type="text" name="apellidos" placeholder="Ingresa tus apellidos" autocomplete="family-name" autocapitalize="words"/>
+                </div>
+                <div class="input-group">
+                    <label for="correo">Correo:</label>
+                    <input id="correo" type="email" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email"/>
+                </div>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="terminos"> Acepto los términos y condiciones</label>
+                    <label><input type="checkbox" name="datos"> Acepto otorgar mis datos personales</label>
+                </div>
+                <button class="btn-primary btn-right" type="submit">Enviar</button>
+                </div>
+
+                <div class="contact-right">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="soporte" class="section soporte">
+        <div class="container soporte-wrap">
+            <h2 class="soporte-title">Soporte</h2>
+
+            <div class="soporte-grid">
+            <div class="soporte-form">
+                <div class="input-group">
+                <label>Nombres:</label>
+                <input type="text" />
+                </div>
+                <div class="input-group">
+                <label>Apellidos:</label>
+                <input type="text" />
+                </div>
+                <div class="input-group">
+                <label>Correo:</label>
+                <input type="email" />
+                </div>
+                <div class="input-group">
+                <label>Mensaje:</label>
+                <textarea rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+
+            <div class="faq-col">
+                <a href="#" class="faq-item">
+                <span class="left">
+                    <span class="icon">👤</span>
+                    <span class="label">FAQ: Cuenta y Seguridad</span>
+                </span>
+                <span class="arrow">➤</span>
+                </a>
+
+                <a href="#" class="faq-item">
+                <span class="left">
+                    <span class="icon">📦</span>
+                    <span class="label">FAQ: Entregas y Recojos</span>
+                </span>
+                <span class="arrow">➤</span>
+                </a>
+
+                <a href="#" class="faq-item">
+                <span class="left">
+                    <span class="icon">🎁</span>
+                    <span class="label">FAQ: Puntos e incentivos</span>
+                </span>
+                <span class="arrow">➤</span>
+                </a>
+
+                <a href="#" class="faq-item">
+                <span class="left">
+                    <span class="icon">🌲</span>
+                    <span class="label">FAQ: Impacto Ambiental</span>
+                </span>
+                <span class="arrow">➤</span>
+                </a>
+
+                <a href="#" class="faq-item">
+                <span class="left">
+                    <span class="icon">📁</span>
+                    <span class="label">FAQ: Privacidad y Datos</span>
+                </span>
+                <span class="arrow">➤</span>
+                </a>
+
+                <ul class="soporte-mini">
+                <li><strong>Horario de atención:</strong> Todo el tiempo disponible</li>
+                <li><strong>Correo de soporte:</strong> soporte@QhuriNet.com</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa" class="section explora-section mapa-section">
+    <div class="container mapa-wrap">
+        <div class="mapa-grid">
+        <div class="mapa-copy">
+            <h2 class="mapa-title">Mapa Interactivo</h2>
+
+            <p class="mapa-lead">
+            Con el mapa interactivo de QhuriNet puedes encontrar
+            fácilmente los puntos de recolección más cercanos y ver la
+            disponibilidad de recolectores en tiempo real.<br>
+            Desde esta sección podrás:
+            </p>
+
+            <ul class="mapa-list">
+            <li>Ubicar bodegas, puntos ecológicos y recolectores activos en tu zona.</li>
+            <li>Filtrar por tipo de material (plástico, vidrio, papel, metal, etc.).</li>
+            <li>Seleccionar un punto para programar o confirmar una recolección.</li>
+            <li>Ver rutas y tiempos estimados de llegada del recolector.</li>
+            </ul>
+        </div>
+
+        <div class="mapa-phone">
+            <img src="img/mockup-telefono.png" alt="App QhuriNet - Mapa" />
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="beneficios" class="section explora-section beneficios-section">
+    <div class="container beneficios-wrap">
+        <div class="beneficios-grid">
+        <div class="beneficios-copy">
+            <h2 class="beneficios-title">Beneficios</h2>
+
+            <p class="beneficios-p">
+            <strong>En QhuriNet premiamos tu compromiso con el planeta.</strong><br>
+            Cada vez que completes entregas, publiques materiales o alcances metas,
+            ganarás puntos que podrás ver en tu Historial de Actividades.
+            </p>
+
+            <p class="beneficios-p">
+            También puedes obtener bonos diarios, mantener rachas de uso y
+            participar en desafíos semanales para sumar aún más. Luego, canjea tus
+            puntos en la Tienda de Recompensas por beneficios como prioridad en
+            publicaciones, créditos dentro de la app o certificados ecológicos.
+            Tu esfuerzo por reciclar y ayudar al medio ambiente merece reconocimiento
+            </p>
+
+            <p class="beneficios-cta">
+            <strong>¡Sigue sumando y forma parte de nuestra comunidad sostenible!</strong>
+            </p>
+        </div>
+
+        <div class="beneficios-phones">
+            <img src="img/beneficio-1.png" alt="Pantalla de recompensas" class="phone">
+            <img src="img/beneficio-2.png" alt="Certificados digitales" class="phone">
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="impacto" class="section explora-section impacto-static">
+    <div class="container impacto2-wrap">
+        <h2 class="impacto2-title">Impacto Ambiental</h2>
+
+        <p class="impacto2-lead">
+        Con el Módulo de Impacto Ambiental de QhuriNet puedes ver, de forma clara y visual, 
+        cuánto estás aportando al planeta. A través de gráficos mensuales y circulares, 
+        conocerás la cantidad total de materiales que has reciclado y el porcentaje por tipo 
+        (plástico, papel, vidrio y metal).
+        </p>
+
+        <p class="impacto2-lead">
+        Así podrás medir tu progreso, mantener la constancia y reconocer tu impacto positivo. 
+        Además, esta información se conecta con el sistema de recompensas, impulsando tu compromiso 
+        con una comunidad más sostenible.
+        </p>
+
+        <div class="impacto2-grid">
+        <figure class="impacto2-card sm">
+            <img src="img/impacto-2.png" alt="Reciclaje por mes">
+        </figure>
+        <figure class="impacto2-card lg">
+            <img src="img/impacto-3.png" alt="Distribución de materiales">
+        </figure>
+        <figure class="impacto2-card sm">
+            <img src="img/impacto-1.png" alt="Estadísticas del perfil">
+        </figure>
+        </div>
+    </div>
+    </section>
+
+    <section id="chat" class="section explora-section chat-section">
+    <div class="container chat-wrap">
+        <div class="chat-grid">
+        <div class="chat-copy">
+            <h2 class="chat-title">Chat de Coordinación</h2>
+
+            <p class="chat-lead">
+            Coordina fácilmente tus recolecciones ♻️<br>
+            Conéctate con recicladores o usuarios para acordar entregas,
+            compartir detalles y confirmar recolecciones en tiempo real.
+            <br><br>
+            Un espacio pensado para hacer del reciclaje colaborativo algo
+            simple, confiable y directo.
+            </p>
+        </div>
+
+        <div class="chat-phone">
+            <img src="img/chat-mockup.png" alt="App QhuriNet - Chat de Coordinación">
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="gestion" class="section explora-section gestion-section">
+    <div class="container gestion-wrap">
+        <div class="gestion-grid">
+        <div class="gestion-copy">
+            <h2 class="gestion-title">Gestión de Material</h2>
+
+            <p class="gestion-lead">
+            Todo tu impacto, en un solo lugar 🌎
+            </p>
+            <p class="gestion-lead">
+            Revisa los materiales que registraste, su estado y los
+            resultados de tu aporte al planeta.
+            </p>
+            <p class="gestion-lead">
+            Monitorea tu progreso y descubre cuánto estás ayudando al
+            medio ambiente con cada acción sostenible.
+            </p>
+        </div>
+
+        <div class="gestion-phone">
+            <img src="img/gestion-mockup.png" alt="QhuriNet - Gestión de Material">
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-col contact">
+                    <h4>Contáctanos</h4>
+                    <p>QhuriNet@gmail.com<br>+51 999 945 551</p>
+                </div>
+
+                <div class="footer-col legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="instagram"><img src="img/icons/instagram.png" alt="Instagram"></a>
+                        <a href="#" aria-label="facebook"><img src="img/icons/facebook.png" alt="Facebook"></a>
+                        <a href="#" aria-label="linkedin"><img src="img/icons/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 QhuriNet. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <section id="login" class="section login-section">
+    <div class="container login-wrap">
+        <a href="#inicio" class="back-link">← Volver al inicio</a>
+        <h1 class="login-brand">QhuriNet</h1>
+        <p class="login-sub">Únete a la comunidad de reciclaje comunitario</p>
+
+        <div class="login-card">
+        <h2>Iniciar Sesión</h2>
+        <p class="welcome">¡Bienvenido de vuelta!<br>
+        Ingresa tus datos para acceder a tu cuenta:</p>
+
+        <form class="login-form">
+            <label>Correo electrónico:</label>
+            <input type="email" placeholder="tucorreo@ejemplo.com" required>
+
+            <label>Contraseña:</label>
+            <input type="password" placeholder="********" required>
+
+            <button type="submit" class="btn-login">Iniciar Sesión</button>
+
+            <div class="divider">O continúa con</div>
+
+            <div class="social-login">
+            <button type="button" class="btn-social google">Google</button>
+            <button type="button" class="btn-social facebook">Facebook</button>
+            </div>
+
+            <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <section id="registro" class="section registro-section">
+    <div class="container registro-wrap">
+        <a href="#inicio" class="back-link">← Volver al inicio</a>
+        <h1 class="registro-brand">QhuriNet</h1>
+        <p class="registro-sub">Únete a la comunidad de reciclaje comunitario</p>
+
+        <div class="registro-card">
+        <h2>Registrarse</h2>
+        <p class="welcome">Crear cuenta<br>Únete a la comunidad QhuriNet</p>
+
+        <form class="registro-form">
+            <label>Nombre Completo:</label>
+            <input type="text" placeholder="Tu nombre completo" required>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="tucorreo@ejemplo.com" required>
+
+            <label>Tipo de Usuario:</label>
+            <select required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="bodega">Bodega / Pequeño comercio</option>
+                <option value="ciudadano">Ciudadano</option>
+            </select>
+
+            <label>Contraseña:</label>
+            <input type="password" placeholder="********" required>
+
+            <label>Confirmar Contraseña:</label>
+            <input type="password" placeholder="********" required>
+
+            <label class="checkbox-terms">
+            <input type="checkbox" required>
+            Acepto los términos y condiciones
+            </label>
+
+            <button type="submit" class="btn-register-form">Crear Cuenta</button>
+
+            <div class="divider">O regístrate con</div>
+
+            <div class="social-login">
+            <button type="button" class="btn-social google">Google</button>
+            <button type="button" class="btn-social facebook">Facebook</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>
